@@ -10,13 +10,19 @@ public class Driver {
 		// welcome user to the bookstore
 		if (hasUserVisited != true)
 		{
-			// Testing assertions - assert that the hasUserVisited value is indeed true
-			assert (hasUserVisited == true);
 			
 			Messages messages = new Messages();
 			System.out.println(messages.getGreeting());
 			
 			hasUserVisited = true;
+			
+			// Testing first type of built-in assertion - assert that the hasUserVisited value is indeed true
+			assert (hasUserVisited == true);
+			
+			// Testing second type of built-in assertion - assert that the hasUserVisited value is indeed true
+			// Syntax is: assert Expression1 : Expression2
+			// Where Expression1 is the actual test, and Expression2 is the detailed message thrown in the Exception
+			assert (hasUserVisited == false) : ("hasUserVisited is current set to: " + hasUserVisited);
 		}
 	}
 
