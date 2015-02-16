@@ -1,0 +1,3 @@
+- Add books to a database
+- Create a class and methods to retrieve the books from the database
+- Add interaction in driver class to use the book retrieval class
